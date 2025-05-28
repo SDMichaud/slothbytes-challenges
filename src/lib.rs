@@ -30,3 +30,6 @@ pub use timetoeat::time_to_eat;
 
 pub mod removevirus;
 pub use removevirus::remove_virus;
+
+pub mod actualmemory;
+pub use actualmemory::actual_memory;
