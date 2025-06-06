@@ -33,3 +33,6 @@ pub use removevirus::remove_virus;
 
 pub mod actualmemory;
 pub use actualmemory::actual_memory;
+
+pub mod nextletters;
+pub use nextletters::next_letters;
