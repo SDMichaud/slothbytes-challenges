@@ -36,3 +36,6 @@ pub use actualmemory::actual_memory;
 
 pub mod nextletters;
 pub use nextletters::next_letters;
+
+pub mod factorials;
+pub use factorials::fact_of_fact;
