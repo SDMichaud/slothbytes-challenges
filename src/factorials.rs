@@ -10,10 +10,12 @@
 /// # Examples
 /// 
 /// ```
+/// use slothbytes::fact_of_fact;
+/// 
 /// // fact_of_fact(4) = 4! * 3! * 2! * 1! = 288
 /// let n: u32 = 4;
 /// let expected: u64 = 288;
-/// assert_eq!(slothbytes::fact_of_fact(n), expected);
+/// assert_eq!(fact_of_fact(n), expected);
 /// 
 /// ```
 pub fn fact_of_fact(n: u32) -> u64 {

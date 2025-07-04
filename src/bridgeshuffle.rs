@@ -15,15 +15,17 @@
 /// # Examples
 /// 
 /// ```
+/// use slothbytes::bridgeshuffle;
+/// 
 /// let list_a: Vec<i32> = vec![1, 3, 5, 7];
 /// let list_b: Vec<i32> = vec![2, 4, 6];
 /// let expected: Vec<i32> = vec![1, 2, 3, 4, 5, 6, 7];
-/// assert_eq!(expected, slothbytes::bridgeshuffle(list_a, list_b));
+/// assert_eq!(bridgeshuffle(list_a, list_b), expected);
 /// 
 /// let list_a: Vec<&str> = vec!["A", "A", "A"];
 /// let list_b: Vec<&str> = vec!["B", "B", "B"];
 /// let expected: Vec<&str> = vec!["A", "B", "A", "B", "A", "B"];
-/// assert_eq!(expected, slothbytes::bridgeshuffle(list_a, list_b));
+/// assert_eq!(bridgeshuffle(list_a, list_b), expected);
 /// 
 /// ```
 pub fn bridgeshuffle<T: Copy>(list_a: Vec<T>, list_b: Vec<T>) -> Vec<T> {
