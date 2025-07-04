@@ -21,7 +21,7 @@
 /// 
 /// let ms = "32GB";
 /// let expected = "29.76GB";
-/// assert_eq!(slothbytes::actual_memory(ms), expected);
+/// assert_eq!(actual_memory(ms), expected);
 /// 
 /// let ms = "512MB";
 /// let expected = "476MB";

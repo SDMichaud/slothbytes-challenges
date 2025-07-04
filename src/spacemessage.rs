@@ -16,8 +16,10 @@ use std::iter::repeat;
 /// # Examples
 ///
 /// ```
+/// use slothbytes::spacemessage;
+/// 
 /// let encrypted = "IF[2E]LG[5O]D";
-/// let decrypted = slothbytes::spacemessage(encrypted);
+/// let decrypted = spacemessage(encrypted);
 /// assert_eq!("IFEELGOOOOOD", decrypted);
 /// ```
 pub fn spacemessage(message: &str) -> String {

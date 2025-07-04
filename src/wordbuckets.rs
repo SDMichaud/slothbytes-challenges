@@ -14,20 +14,20 @@
 /// # Examples
 ///
 /// ```
+/// use slothbytes::split_into_buckets;
+/// 
 /// let s = "fairy dust coated the air";
 /// let n = 20;
 /// let mut expected = Vec::new();
 /// expected.push(String::from("fairy dust coated"));
 /// expected.push(String::from("the air"));
-/// assert_eq!(expected, slothbytes::split_into_buckets(s, n));
-/// ```
+/// assert_eq!(split_into_buckets(s, n), expected);
 /// 
-/// Cannot bucketize one of the words, returns empty vector:
-/// ```
+/// // Cannot bucketize one of the words, returns empty vector:
 /// let s = "One word is too freaking long";
 /// let n = 4;
 /// let expected: Vec<String> = Vec::new();
-/// assert_eq!(expected, slothbytes::split_into_buckets(s, n))
+/// assert_eq!(split_into_buckets(s, n), expected)
 /// ```
 pub fn split_into_buckets(s: &str, n: i32) -> Vec<String> {
     // check if input is empty string

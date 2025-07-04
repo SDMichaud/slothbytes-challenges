@@ -17,11 +17,13 @@
 /// # Examples
 /// 
 /// ```
+/// use slothbytes::lemonade;
+/// 
 /// let bills: Vec<i32> = vec![5, 5, 5, 10, 20];
-/// assert!(slothbytes::lemonade(bills));
+/// assert!(lemonade(bills));
 /// 
 /// let bad_bills: Vec<i32> = vec![5, 5, 10, 10, 20];
-/// assert!(!slothbytes::lemonade(bad_bills));
+/// assert!(!lemonade(bad_bills));
 /// ```
 pub fn lemonade(bills: Vec<i32>) -> bool {
     let mut change = Bills::new();
