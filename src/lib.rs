@@ -42,3 +42,6 @@ pub use factorials::fact_of_fact;
 
 pub mod bdaycandles;
 pub use bdaycandles::birthday_cake_candles;
+
+pub mod spiralmatrix;
+pub use spiralmatrix::spiral_order;
