@@ -45,3 +45,6 @@ pub use bdaycandles::birthday_cake_candles;
 
 pub mod spiralmatrix;
 pub use spiralmatrix::spiral_order;
+
+pub mod digitsbetween;
+pub use digitsbetween::digits_between;
