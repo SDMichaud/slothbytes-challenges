@@ -19,24 +19,15 @@
 /// 
 /// ```
 pub fn find_broken_keys(correct: &str, typed: &str) -> Vec<char> {
-    let unique_letters = get_unique_letters(correct);
     let mut broken_keys = Vec::new();
-    for c in unique_letters {
+    for c in correct.chars() {
         if !typed.contains(c) {
-            broken_keys.push(c);
+            if !broken_keys.contains(&c) {
+                broken_keys.push(c);
+            }
         }
     }
     broken_keys
-}
-
-fn get_unique_letters(s: &str) -> Vec<char> {
-    let mut unique_letters = Vec::new();
-    for c in s.chars() {
-        if !unique_letters.contains(&c) {
-            unique_letters.push(c);
-        }
-    }
-    unique_letters
 }
 
 #[cfg(test)]
