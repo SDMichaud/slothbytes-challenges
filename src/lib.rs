@@ -48,3 +48,9 @@ pub use spiralmatrix::spiral_order;
 
 pub mod digitsbetween;
 pub use digitsbetween::digits_between;
+
+pub mod brokenkeyboard;
+pub use brokenkeyboard::find_broken_keys;
+
+pub mod jumpgame;
+pub use jumpgame::can_jump;
