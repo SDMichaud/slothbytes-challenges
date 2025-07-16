@@ -54,3 +54,6 @@ pub use brokenkeyboard::find_broken_keys;
 
 pub mod jumpgame;
 pub use jumpgame::can_jump;
+
+pub mod validstring;
+pub use validstring::is_valid;
