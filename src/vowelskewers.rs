@@ -104,7 +104,7 @@ fn get_ch_type(ch: char) -> Option<CharacterType> {
         return Some(CharacterType::Skewer);
     }
     if "aeiouAEIOU".contains(ch) {
-        return  Some(CharacterType::Vowel);
+        return Some(CharacterType::Vowel);
     }
     if "bcdfghjklmnpqrstvwxzBCDFGHJKLMNPQRSTVWXZ".contains(ch) {
         return Some(CharacterType::Consonant);
