@@ -57,3 +57,6 @@ pub use jumpgame::can_jump;
 
 pub mod validstring;
 pub use validstring::is_valid;
+
+pub mod vowelskewers;
+pub use vowelskewers::is_authentic_skewer;
