@@ -60,3 +60,6 @@ pub use validstring::is_valid;
 
 pub mod vowelskewers;
 pub use vowelskewers::is_authentic_skewer;
+
+pub mod wordoverlap;
+pub use wordoverlap::overlap;
